@@ -4,13 +4,19 @@ P.chess_output {
 	border: 1px solid lightgrey;
 	border-left: 5px solid lightgrey;
 	padding: 3px;
+	background-color: white;
 	font-family: monospace;
 	font-size: 10pt;
 }	
 
-.highlight {
+.chess_highlight {
 	background-color: yellow;
 	font-weight: bold;
 	color: red;
 	font-size: larger;
+}
+
+#chess_input {
+	width: 700px;
+	height: 200px;
 }

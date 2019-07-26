@@ -1,7 +1,7 @@
 
 //==================================================
 // Chess solver
-// Copyright (C) ecrucru, 2019
+// Copyright (C) 2019, ecrucru
 // https://github.com/ecrucru/chess-solver/
 // License AGPL v3
 //==================================================
@@ -166,7 +166,7 @@ function chess_ui()
 	//-- Show the result
 	for (i=0 ; i<chess.foundMoves.length ; i++)
 		if (chess.foundMoves[i])
-			chess.solution[i] = '<span class="highlight">' + chess.solution[i] + '</span>';
+			chess.solution[i] = '<span class="chess_highlight">' + chess.solution[i] + '</span>';
 	e1.innerHTML = chess.candidates.join(', ');
 	e2.innerHTML = chess.solution.join(' ');
 	return true;
