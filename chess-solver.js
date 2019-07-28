@@ -61,7 +61,7 @@ function chess_solver(pInput)
 	input = input.replace(/\s+/g, ' ').trim().split(' ');
 	for (i=input.length-1 ; i>=0 ; i--)
 	{
-		b1 = input[i].match(/^[0-9]+\.*$/);
+		b1 = input[i].match(/^[0-9]+\.*$/) || input[i].startsWith('$');
 		b2 = (['1-0', '0-1', '1/2-1/2'].indexOf(input[i]) != -1);
 		if (b2)
 			result.headers.Result = input[i];
