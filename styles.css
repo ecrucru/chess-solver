@@ -17,6 +17,6 @@ P.chess_output {
 }
 
 #chess_input {
-	width: 700px;
+	width: 100%;
 	height: 200px;
 }
